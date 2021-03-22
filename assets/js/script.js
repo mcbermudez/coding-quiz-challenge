@@ -1,21 +1,62 @@
-// Create start button to start quiz
-const startButton = document.getElementById('quiz-start-btn')
+// Global Variables
+var i = 0;
+var score = 0;
+var count = 75;
 
-startButton.addEventListener('click', startQuiz)
+var timer = document.getElementById("quiz-timer");
+var quizQuestions = document.getElementById("quiz-questions");
+var quizAnswer = document.getElementById("quiz-answer")
+var nextQuestion
+var highScore = document.getElementById("quiz-scores");
+
+
+
+// Quiz Questions and Answers
+var questions = [
+    { quetion: "Dummy Question",
+    options: ["A", "B", "C", "D"],
+    answer: "A"
+},
+{ quetion: "Dummy Question",
+    options: ["A", "B", "C", "D"],
+    answer: "A"
+},
+{ quetion: "Dummy Question",
+    options: ["A", "B", "C", "D"],
+    answer: "A"
+},
+{ quetion: "Dummy Question",
+    options: ["A", "B", "C", "D"],
+    answer: "A"
+},
+{ quetion: "Dummy Question",
+    options: ["A", "B", "C", "D"],
+    answer: "A"
+},
+]
+
+// Create start button to start quiz
+var startButton = document.getElementById("start-btn")
+startButton.addEventListener("click", startQuiz);
 
 function startQuiz() {
-    console.log('Started')
+    
 }
 
 // Start timer after page loads
 
+//function startTimer() {}
+
 // Display questions to DOM (div/element/section - HTML5)
+//function setQuizQuestion() {}
 
 // Display multiple choice options (attach to DOM - div/element/section - HTML5)
 
 // Attach time to DOM (see how much time remains  div/element/section - HTML5)
 
 // IF answered correctly --> next question
+//function selectAnswer() {}
+
 
 // IF answered incorrectly --> subtract time clock
 

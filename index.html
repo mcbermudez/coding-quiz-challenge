@@ -9,17 +9,32 @@
     <title>Coding Quiz</title>
   </head>
   <body>
-    <!--Quiz Container-->
-    <div class="quiz-containter">
+    <!--Overall Container-->
+
+    <div class="container">
+      
+      <!--Navigation-->
+      <div class="row">
+        <div class="col-6">
+          <p id="quiz-score" class="quiz-scores">View High Scores</p>
+        </div>
+        <div class="col-6">
+          <p id="quiz-timer" class="quiz-timer">Timer:</p>
+        </div>
+      </div>
+      
+      <!--Quiz and Answer Container-->
       <div id="question-container" class="hide">
         <div id="quiz-question" class="quiz-question">Question</div>
-        <div id="answer-buttons" class="btn-grid">
+        <div id="quiz-answers" class="btn-grid">
           <button class="button">Answer A</button>
           <button class="button">Answer B</button>
           <button class="button">Answer C</button>
           <button class="button">Answer D</button>
         </div>
       </div>
+
+      <!--Quiz Decription-->
       <div id="quiz-description">
         <h2 class="quiz-title" id="quiz-title">
           Javascript Quiz
@@ -27,13 +42,15 @@
         <p class="quiz-description" id="quiz-description">
           Try to answer the folowing code-related questions within the time limit. <br/>Keep in mind that incorrect answers will penalize your score/time by ten seconds!
         </p>
-        <button class="quiz-start-btn" id="quiz-start-btn" type="button">
+        <button class="start-btn" id="start-btn" type="button">
           Start
         </button>
       </div>
-    </div>
-    
+
+    </div>      
+
     <script src="./assets/js/script.js"></script>
 
   </body>
+
 </html>
