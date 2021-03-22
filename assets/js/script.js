@@ -1,4 +1,11 @@
 // Create start button to start quiz
+const startButton = document.getElementById('quiz-start-btn')
+
+startButton.addEventListener('click', startQuiz)
+
+function startQuiz() {
+    console.log('Started')
+}
 
 // Start timer after page loads
 

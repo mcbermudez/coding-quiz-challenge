@@ -4,16 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Coding Quiz</title>
   </head>
   <body>
-    <div class="container">
-      <h1 class="welcome">Coding Quiz Challenge</h1>
-      <button id="start">Start Quiz</button>
-      <h2 id="countdown"></h2>
-      <p id="main">Try to answer the following code-related questions withing the time limit. <br/> Keep in mind that incorrect answers will penalyze your score/time by 10 seconds!</p>
+    <!--Quiz Container-->
+    <div class="quiz-containter">
+      <div id="question-container" class="hide">
+        <div id="quiz-question" class="quiz-question">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+          <button class="button">Answer A</button>
+          <button class="button">Answer B</button>
+          <button class="button">Answer C</button>
+          <button class="button">Answer D</button>
+        </div>
+      </div>
+      <div id="quiz-description">
+        <h2 class="quiz-title" id="quiz-title">
+          Javascript Quiz
+        </h2>
+        <p class="quiz-description" id="quiz-description">
+          Try to answer the folowing code-related questions within the time limit. <br/>Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+        </p>
+        <button class="quiz-start-btn" id="quiz-start-btn" type="button">
+          Start
+        </button>
+      </div>
     </div>
+    
     <script src="./assets/js/script.js"></script>
+
   </body>
 </html>
