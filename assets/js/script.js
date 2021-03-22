@@ -4,8 +4,10 @@ var score = 0;
 var count = 75;
 
 var timer = document.getElementById("quiz-timer");
+var startButton = document.getElementById("start-btn");
+var questionContainer = document.getElementById("quiz-container")
 var quizQuestions = document.getElementById("quiz-questions");
-var quizAnswer = document.getElementById("quiz-answer")
+var quizAnswers = document.getElementById("quiz-answers")
 var nextQuestion
 var highScore = document.getElementById("quiz-scores");
 
@@ -36,11 +38,13 @@ var questions = [
 ]
 
 // Create start button to start quiz
-var startButton = document.getElementById("start-btn")
 startButton.addEventListener("click", startQuiz);
 
 function startQuiz() {
-    
+    console.log('Started')
+    startButton.classList.add('hide')
+    quizQuestions.classList.remove('hide')
+    setNextQuestion()
 }
 
 // Start timer after page loads
